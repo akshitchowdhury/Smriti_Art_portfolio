@@ -6,7 +6,7 @@ import AboutBg3 from "../../assets/about.jpg"
 export default function About() {
   return (
     <div className="min-h-screen bg-[#00008B] p-8 font-sans">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Header */}
         <h1 className="text-white text-center text-5xl font-bold mb-16 mt-8">
           ABOUT <span className="font-serif italic font-normal">the</span> ARTIST
@@ -39,60 +39,7 @@ export default function About() {
             </p>
           </div>
 
-          {/* Right column - Image composition */}
-          <div className="relative h-[400px]">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="absolute left-16  top-2"
-            >
-              <img 
-                src={AboutBg}
-                
-                className="rounded-lg shadow-lg"
-              />
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="absolute left-6  top-20"
-            >
-              <img 
-                src={AboutBg2}
-                alt="Van Gogh portrait fragment 2"
-                className="rounded-lg shadow-lg"
-              />
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="absolute right-16 top-40"
-            >
-              <img 
-                src={AboutBg3}
-                alt="Van Gogh portrait fragment 3"
-                className="rounded-lg shadow-lg"
-              />
-            </motion.div>
-
-            {/* Decorative lines */}
-            <svg
-              className="absolute top-0 right-0 w-full h-full pointer-events-none"
-              viewBox="0 0 400 400"
-            >
-              <path
-                d="M300,50 Q350,150 280,250"
-                stroke="#FFD700"
-                strokeWidth="2"
-                fill="none"
-              />
-            </svg>
-          </div>
+          
         </div>
       </div>
     </div>

@@ -9,8 +9,10 @@ function App() {
 
   return (
     <>
+    <div className='overflow-x-clip'>
       <Hero/>
       <About/>
+      </div>
     </>
   )
 }

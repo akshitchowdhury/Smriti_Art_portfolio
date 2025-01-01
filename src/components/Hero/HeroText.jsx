@@ -4,7 +4,7 @@ const HeroText = () => {
   return (
     <div className="container absolute -my-[50%] lg:-my-[0%] md:-my-[0%] md:labsolute md:top-0
      lg:absolute lg:right-72 lg:top-[200px]">
-      <div className="text-left px-4 md:mx-[30%] lg:w-[900px]">
+      <div className="text-left px-4 md:mx-[30%] lg:w-[600px]">
     
     
         <h1 className="font-script text-4xl text-white font-semibold mb-2 md:text-5xl lg:text-[100px] ">
