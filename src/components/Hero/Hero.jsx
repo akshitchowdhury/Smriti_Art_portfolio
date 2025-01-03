@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Hero.css";
 import HeroText from './HeroText';
 import { motion } from "framer-motion";
@@ -8,8 +8,15 @@ import AboutBg2 from "../../assets/artDump/Exhibition/e1.jpg";
 import AboutBg3 from "../../assets/artDump/Concept/c1.jpeg";
 
 const Hero = () => {
+  const [activeImage, setActiveImage] = useState(null);
+
+  const handleImageTap = (image) => {
+    // Toggle the active image on tap
+    setActiveImage(activeImage === image ? null : image);
+  };
+
   return (
-    <div className="min-h-[130vh] hero-section p-8 font-sans">
+    <div className="min-h-screen hero-section p-8 font-sans">
       <div className="hero-content">
         <div className="max-w-6xl mx-auto">
 
@@ -26,12 +33,11 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                whileHover={{
-                  zIndex: 50,
-                  scale: 1.1,
-                  opacity: 1,
-                }}
-                className="absolute left-12 top-0 rounded-lg shadow-lg"
+                whileHover={{ zIndex: 50, scale: 1.1, opacity: 1 }}
+                onTap={() => handleImageTap("img1")}
+                className={`absolute left-12 top-0 rounded-lg shadow-lg ${
+                  activeImage === "img1" ? "z-50 scale-110" : ""
+                }`}
               >
                 <img 
                   src={AboutBg3}
@@ -45,12 +51,11 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                whileHover={{
-                  zIndex: 50,
-                  scale: 1.1,
-                  opacity: 1,
-                }}
-                className="absolute left-7 top-28 rounded-lg shadow-lg h-[500px]"
+                whileHover={{ zIndex: 50, scale: 1.1, opacity: 1 }}
+                onTap={() => handleImageTap("img2")}
+                className={`absolute left-7 top-28 rounded-lg shadow-lg h-[500px] ${
+                  activeImage === "img2" ? "z-50 scale-110" : ""
+                }`}
               >
                 <img 
                   src={AboutBg2}
@@ -64,12 +69,11 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                whileHover={{
-                  zIndex: 50,
-                  scale: 1.1,
-                  opacity: 1,
-                }}
-                className="absolute right-16 top-44 rounded-lg shadow-lg"
+                whileHover={{ zIndex: 50, scale: 1.1, opacity: 1 }}
+                onTap={() => handleImageTap("img3")}
+                className={`absolute right-16 top-44 rounded-lg shadow-lg ${
+                  activeImage === "img3" ? "z-50 scale-110" : ""
+                }`}
               >
                 <img 
                   src={AboutBg}
@@ -97,6 +101,6 @@ const Hero = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Hero;
