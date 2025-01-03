@@ -1,8 +1,8 @@
 import c1 from "../../../assets/artDump/Concept/c2.jpg";
 
-import c2 from "../../../assets/artDump/Concept/c3.jpg";
-import c3 from "../../../assets/artDump/Concept/c4.jpg";
-import c4 from "../../../assets/artDump/Concept/c5.jpg";
+import c3 from "../../../assets/artDump/Concept/c3.jpg";
+
+// import c4 from "../../../assets/artDump/Concept/c5.jpg";
 import c5 from "../../../assets/artDump/Concept/c6.jpg";
 import c6 from "../../../assets/artDump/Concept/cb1.jpg";
 import c7 from "../../../assets/artDump/Concept/cb2.jpg";
@@ -19,23 +19,23 @@ import c17 from "../../../assets/artDump/Concept/cc6.jpg";
 
 
 const data = [
-  { css: c1, height: 500 },
-  { css: c2, height: 500 },
-//   { css: c3, height: 500 },
-  { css: c4, height: 500 }, 
-  { css: c5, height: 500 },
-  { css: c6, height: 500 },
-  { css: c7, height: 400 },
-  { css: c8, height: 500 },
-  { css: c9, height: 400 },
-  { css: c10, height: 400 },
-  { css: c11, height: 400 },
-  { css: c12, height: 500 },
-  { css: c13, height: 400 },
-  { css: c14, height: 400 },
-  { css: c15, height: 400 },
-  { css: c16, height: 500 },
-  { css: c17, height: 500 },
+  { css: c1, height: 700 },
+  { css: c3, height: 400 },
+//   { css: c3, height: 700 },
+//   { css: c4, height: 700 }, 
+  { css: c5, height: 600 },
+  { css: c6, height: 750 },
+  { css: c7, height: 660 },
+  { css: c8, height: 700 },
+  { css: c9, height: 390 },
+  { css: c10, height: 430 },
+  { css: c11, height: 850 },
+  { css: c12, height: 750 },
+  { css: c13, height: 900 },
+  { css: c14, height: 560 },
+  { css: c15, height: 300 },
+  { css: c16, height: 400 },
+  { css: c17, height: 470 },
   ];
   // { css: /416430/416430, height: 300 },
   // { css: /1103970/1103970, height: 300 },
@@ -46,10 +46,10 @@ const data = [
   // { css: /1005644/1005644, height: 200 },
   // { css: /227675/227675, height: 300 },
   // { css: /325185/325185, height: 200 },
-  // { css: /327482/327482, height: 400 },
+  // { css: /327482/327482, height: 300 },
   // { css: /2736834/2736834, height: 200 },
   // { css: /249074/249074, height: 300 },
-  // { css: /310452/310452, height: 400 },
+  // { css: /310452/310452, height: 300 },
   // { css: /380337/380337, height: 200 },
   // ];
   
