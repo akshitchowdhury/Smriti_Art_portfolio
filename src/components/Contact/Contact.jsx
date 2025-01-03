@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
       {/* Left Image Section */}
-      <div className="w-full h-64 md:h-[100vh]">
+      <div className="w-full h-96 md:h-[100vh]">
         <img
           src={contactBG}
           alt="Contact"
