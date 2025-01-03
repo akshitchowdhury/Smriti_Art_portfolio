@@ -5,7 +5,7 @@ import AboutBg2 from "../../assets/about2.jpg"
 import AboutBg3 from "../../assets/about.jpg"
 export default function About() {
   return (
-    <div className="min-h-screen bg-[#00008B] p-8 font-sans">
+    <div className="min-h-screen bg-red-500 p-8 font-sans">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <h1 className="text-white text-center text-5xl font-bold mb-16 mt-8">

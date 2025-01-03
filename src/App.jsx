@@ -7,6 +7,7 @@ import About from './components/About/About'
 import Gallery from './components/Gallery/Gallery'
 import GalleryShow from './components/Gallery/GalleryShow/GalleryShow'
 import ITransition from './components/Gallery/GalleryShow/ITransition'
+import Contact from './components/Contact/Contact'
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
       <Hero/>
       <About/>
       <GalleryShow/>
-      
+      <Contact/>
       </div>
     </>
   )
