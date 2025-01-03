@@ -10,10 +10,13 @@ import AboutBg3 from "../../assets/artDump/Concept/c1.jpeg";
 const Hero = () => {
   const [activeImage, setActiveImage] = useState(null);
 
-  const handleImageTap = (image) => {
-    // Toggle the active image on tap
-    setActiveImage(activeImage === image ? null : image);
-  };
+  // Animation function to handle smooth transitions
+  const getAnimationProps = (image) => ({
+    animate: activeImage === image
+      ? { zIndex: 50, scale: 1.1, opacity: 1 }
+      : { zIndex: 10, scale: 1, opacity: 0.8 },
+    transition: { duration: 0.6, ease: "easeInOut" },
+  });
 
   return (
     <div className="min-h-screen hero-section p-8 font-sans">
@@ -30,14 +33,10 @@ const Hero = () => {
             <div className="relative h-[400px]">
               {/* Image 1 */}
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
+                {...getAnimationProps("img1")}
                 whileHover={{ zIndex: 50, scale: 1.1, opacity: 1 }}
-                onTap={() => handleImageTap("img1")}
-                className={`absolute left-12 top-0 rounded-lg shadow-lg ${
-                  activeImage === "img1" ? "z-50 scale-110" : ""
-                }`}
+                onTap={() => setActiveImage(activeImage === "img1" ? null : "img1")}
+                className="absolute left-12 top-0 rounded-lg shadow-lg"
               >
                 <img 
                   src={AboutBg3}
@@ -48,14 +47,10 @@ const Hero = () => {
 
               {/* Image 2 */}
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
+                {...getAnimationProps("img2")}
                 whileHover={{ zIndex: 50, scale: 1.1, opacity: 1 }}
-                onTap={() => handleImageTap("img2")}
-                className={`absolute left-7 top-28 rounded-lg shadow-lg h-[500px] ${
-                  activeImage === "img2" ? "z-50 scale-110" : ""
-                }`}
+                onTap={() => setActiveImage(activeImage === "img2" ? null : "img2")}
+                className="absolute left-7 top-28 rounded-lg shadow-lg h-[500px]"
               >
                 <img 
                   src={AboutBg2}
@@ -66,14 +61,10 @@ const Hero = () => {
 
               {/* Image 3 */}
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
+                {...getAnimationProps("img3")}
                 whileHover={{ zIndex: 50, scale: 1.1, opacity: 1 }}
-                onTap={() => handleImageTap("img3")}
-                className={`absolute right-16 top-44 rounded-lg shadow-lg ${
-                  activeImage === "img3" ? "z-50 scale-110" : ""
-                }`}
+                onTap={() => setActiveImage(activeImage === "img3" ? null : "img3")}
+                className="absolute right-16 top-44 rounded-lg shadow-lg"
               >
                 <img 
                   src={AboutBg}
@@ -104,3 +95,4 @@ const Hero = () => {
 };
 
 export default Hero;
+ 
