@@ -3,9 +3,9 @@ import "./Hero.css"
 import HeroText from './HeroText'
 import { motion } from "framer-motion"
 
-import AboutBg from "../../assets/about3.jpg"
-import AboutBg2 from "../../assets/about2.jpg"
-import AboutBg3 from "../../assets/about.jpg"
+import AboutBg from "../../assets/artDump/Sketch/s9.jpg"
+import AboutBg2 from "../../assets/artDump/Exhibition/e1.jpg"
+import AboutBg3 from "../../assets/artDump/Concept/c1.jpeg"
 
 const Hero = () => {
   return (
@@ -29,7 +29,7 @@ const Hero = () => {
               className="absolute left-12 top-20"
             >
               <img 
-                src={AboutBg}
+                src={AboutBg3}
                 alt="Artist portrait fragment 1"
                 className="rounded-lg shadow-lg"
               />
@@ -55,7 +55,7 @@ const Hero = () => {
               className="absolute right-16 top-64"
             >
               <img 
-                src={AboutBg3}
+                src={AboutBg}
                 alt="Artist portrait fragment 3"
                 className="rounded-lg shadow-lg"
               />
