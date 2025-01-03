@@ -1,4 +1,4 @@
-import { FacebookIcon, Instagram, Twitter } from 'lucide-react';
+import { FacebookIcon, Instagram, LucidePaintbrush, Paintbrush2Icon, Twitter } from 'lucide-react';
 import contactBG from "../../assets/artDump/Sketch/s4.jpg";
 
 export default function Contact() {
@@ -14,7 +14,7 @@ export default function Contact() {
       </div>
 
       {/* Right Form Section */}
-      <div className="bg-red-400 flex h-auto md:h-[100vh] items-center justify-center p-6 md:p-24">
+      <div className="bg-red-500 flex h-auto md:h-[100vh] items-center justify-center p-6 md:p-24">
         <div className="max-w-xl w-full space-y-12">
           {/* Heading */}
           <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold tracking-tight text-center md:text-left">
@@ -82,7 +82,7 @@ export default function Contact() {
                 href="#"
                 className="text-black hover:text-black/70 transition-colors"
               >
-                <Twitter className="w-6 h-6" />
+                <LucidePaintbrush className="w-6 h-6" />
                 <span className="sr-only">Twitter</span>
               </a>
             </div>
