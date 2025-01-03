@@ -1,9 +1,4 @@
-.gallery-main-container {
-    width: 100%;
-    height: 50vh;
-    overflow: hidden;
-    position: relative;
-  }
+
 .gallery-show-container {
     width: 100%;
     height: 140vh;
@@ -20,19 +15,7 @@
     z-index: 2;
   }
   
-  .glassPic{
-    background-image: url("../../../assets/artDump/Sketch/sBg.jpg");
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    opacity: 1;
-  }
+
   .slideshow {
     width: 100%;
     height: 100%;
@@ -86,15 +69,5 @@
     }
   }
   
-  .glass-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(3px);
-    z-index: 2;
-  }
-  
+
   
